@@ -1,10 +1,10 @@
-#### Q: Can I create a copy of my site for development purpose only?
+### Q: Can I create a copy of my site for development purpose only?
 
 > **YES.** You may clone any site into your server and set it to `DEVELOPMENT MODE`.
 
 - - -
 
-#### Q: How do I *"mirror"* or *sync* a copy of my production site?
+### Q: How do I *"mirror"* or *sync* a copy of my production site?
 
 > **YES!** -- by cloning your production site into a new site-environment *(aka virtual-host)*.
 
@@ -18,7 +18,7 @@
 
 - - -
 
-#### Q: Is it possible to deploy any copy of a site for production?
+### Q: Is it possible to deploy any copy of a site for production?
 
 > **YES.** Staging or setting a site for production can be achieved by doing the methods listed below.
 
@@ -31,7 +31,7 @@
 
 - - -
 
-#### Q: Can I make as many copies of my site into the same server?
+### Q: Can I make as many copies of my site into the same server?
 > **YES -- BUT KEEP IN MIND** the available resources: `disk-space` and `memory` will be shared by sites hosted in the same server.
 
 If you run out of server-resources, it may lead to data-loss if important system-services (mysql, apache, nginx) don't have enough room to write new records of data.
@@ -40,7 +40,7 @@ Use your DevPanel site's [**STATS**] tab to check how much disk or memory space 
 
 - - -
 
-#### Q: Would I be able to push changes between environments?
+### Q: Would I be able to push changes between environments?
 
 **Absolutely!** As a matter of fact - any site can be a SOURCE of
 ```markdown
@@ -54,13 +54,13 @@ B) DATABASE
 
 - - -
 
-#### Q: Is it possible to deploy a site from a backup?
+### Q: Is it possible to deploy a site from a backup?
 Whether it's a **FULL site-backup** or separate **CODE-ONLY** / **DATABASE-ONLY** backups -- you may deploy them using the RESTORE tools.
 
 - - -
 
-#### Q: How is DevPanel different from Acquia Cloud or Pantheon (and pricing)?
+### Q: How is DevPanel different from Acquia Cloud or Pantheon (and pricing)?
 
 - - -
 
-#### Q: Can I use DevPanel to work either Acquia Cloud (which also uses AWS) or Pantheon?
+### Q: Can I use DevPanel to work either Acquia Cloud (which also uses AWS) or Pantheon?
