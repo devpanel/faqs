@@ -1,128 +1,66 @@
-## Phrase Emphasis ##
+#### Q: Can I create a copy of my site for development purpose only?
 
-	*italic*   **bold**
-	_italic_   __bold__
+> **YES.** You may clone any site into your server and set it to `DEVELOPMENT MODE`.
 
+- - -
 
-## Links ##
+#### Q: How do I *"mirror"* or *sync* a copy of my production site?
 
-Inline:
+> **YES!** -- by cloning your production site into a new site-environment *(aka virtual-host)*.
 
-	An [example](http://url.com/ "Title")
+#### CLONING a site or application
+1. **APPS > [Clone App]** -- (from _menu bar_)
+1. Provide a unique [**NAME**] to help you identify the new copy on your APPS list.
+1. [**SOURCE**] -- the site to be copied/cloned
+1. [**TARGET**] -- the server where you will deploy the site's copy
 
-Reference-style labels (titles are optional):
+> **TIP:** make use of **['Add a tag']** to associate keywords to a site _(examples: '`dev`', '`testing`', '`for_review`', '`Drupal 7`', '`migration`', etc.)_ that will help you (or your team) easily identify them.
 
-	An [example][id]. Then, anywhere
-	else in the doc, define the link:
-	
-	  [id]: http://example.com/  "Title"
+- - -
 
+#### Q: Is it possible to deploy any copy of a site for production?
 
-## Images ##
+> **YES.** Staging or setting a site for production can be achieved by doing the methods listed below.
 
-Inline (titles are optional):
+1. **Assign or add a domain** to your existing site.
+	* if you already have a site ready for prime-time!
+1. **Clone** a development/staging site-copy **into your production server**. Then, assign a domain.
+1. **Import** a *production-ready* version of source-code or database from another into your existing production site. 
 
-	![alt text](/path/img.jpg "Title")
+> **REMEMBER:** turn off all development features *(debugging scripts, plugins or modules)* once your site is the production copy.
 
-Reference-style:
+- - -
 
-	![alt text][id]
+#### Q: Can I make as many copies of my site into the same server?
+> **YES -- BUT KEEP IN MIND** the available resources: `disk-space` and `memory` will be shared by sites hosted in the same server.
 
-	[id]: /url/to/img.jpg "Title"
+If you run out of server-resources, it may lead to data-loss if important system-services (mysql, apache, nginx) don't have enough room to write new records of data.
 
+Use your DevPanel site's [**STATS**] tab to check how much disk or memory space is currently being used.
 
-## Headers ##
+- - -
 
-Setext-style:
+#### Q: Would I be able to push changes between environments?
 
-	Header 1
-	========
-	
-	Header 2
-	--------
+**Absolutely!** As a matter of fact - any site can be a SOURCE of
+```markdown
+A) CODE
+B) DATABASE
+```
 
-atx-style (closing #'s are optional):
+... which you can "push" or deploy  into ANOTHER _(target)_ site.
 
-	# Header 1 #
+> **BE CAREFUL!** always consider the consequences (data loss) of pushing between environments. *OVERWRITING important or new FILES / DATA* is very imminent. **REMEMBER TO BACK-UP!**
 
-	## Header 2 ##
+- - -
 
-	###### Header 6
+#### Q: Is it possible to deploy a site from a backup?
+Whether it's a **FULL site-backup** or separate **CODE-ONLY** / **DATABASE-ONLY** backups -- you may deploy them using the RESTORE tools.
 
+- - -
 
-## Lists ##
+#### Q: How is DevPanel different from Acquia Cloud or Pantheon (and pricing)?
 
-Ordered, without paragraphs:
+- - -
 
-	1.  Foo
-	2.  Bar
-
-Unordered, with paragraphs:
-
-	*   A list item.
-	
-		With multiple paragraphs.
-
-	*   Bar
-
-You can nest them:
-
-	*   Abacus
-		* answer
-	*   Bubbles
-		1.  bunk
-		2.  bupkis
-			* BELITTLER
-		3. burper
-	*   Cunning
-
-
-## Blockquotes ##
-
-	> Email-style angle brackets
-	> are used for blockquotes.
-	
-	> > And, they can be nested.
-
-	> #### Headers in blockquotes
-	> 
-	> * You can quote a list.
-	> * Etc.
-
-
-## Code Spans ##
-
-	`<code>` spans are delimited
-	by backticks.
-
-	You can include literal backticks
-	like `` `this` ``.
-
-
-## Preformatted Code Blocks ##
-
-Indent every line of a code block by at least 4 spaces or 1 tab.
-
-	This is a normal paragraph.
-
-	    This is a preformatted
-	    code block.
-
-
-## Horizontal Rules ##
-
-Three or more dashes or asterisks:
-
-	---
-	
-	* * *
-	
-	- - - - 
-
-
-## Manual Line Breaks ##
-
-End a line with two or more spaces:
-
-	Roses are red,   
-	Violets are blue.
+#### Q: Can I use DevPanel to work either Acquia Cloud (which also uses AWS) or Pantheon?
